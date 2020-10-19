@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Accounting" version="4">
+  <OBJECT>
+    <ID name="Accounting" mc="Standard.Actor" uid="46a1d8e8-2183-4d90-aa99-98ffea609ae8"/>
+    <PID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Accounting]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="TogafExternalRole" mc="Infrastructure.Stereotype" uid="397be8f2-ab77-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="tax report" mc="Infrastructure.Dependency" uid="974d1346-5dfc-462c-9654-ca655bdfa764"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[tax report]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Revenue Authority" mc="Standard.Actor" uid="af77a4a5-5a5c-4949-9f74-323fd93d85a1"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="a4f5016e-c297-4e3e-bba7-d147ac27f66a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="c6db234b-0720-4b95-9cfa-59f0e4341d80"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[Accounting]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="TogafRole_SkillsRequirements" mc="Infrastructure.TagType" uid="5df508be-ab95-11df-9861-0014224f9977"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

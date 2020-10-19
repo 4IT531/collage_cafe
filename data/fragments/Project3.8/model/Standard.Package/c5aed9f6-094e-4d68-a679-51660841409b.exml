@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Students Platform" version="4">
+  <OBJECT>
+    <ID name="Students Platform" mc="Standard.Package" uid="c5aed9f6-094e-4d68-a679-51660841409b"/>
+    <PID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Students Platform]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Stuff trading" mc="Standard.BpmnProcess" uid="10915423-7c03-45f8-bb89-66fee84252a1"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Trading order arrived" mc="Standard.Signal" uid="56bcb72e-f44b-41ec-ac63-b699cc476c79"/>
+        <COMPID name="Trading order completed" mc="Standard.Signal" uid="1075fcca-ea20-4d3a-aec9-8bafc25874a1"/>
+        <COMPID name="Event" mc="Standard.Signal" uid="893d3fb4-851c-473c-8aac-0051da76c8ad"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="BusinessOrganizationDomain" mc="Infrastructure.Stereotype" uid="b42187ca-ab75-11df-9861-0014224f9977"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

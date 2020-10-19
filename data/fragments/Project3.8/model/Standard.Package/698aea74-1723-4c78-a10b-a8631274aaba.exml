@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Inventory management" version="4">
+  <OBJECT>
+    <ID name="Inventory management" mc="Standard.Package" uid="698aea74-1723-4c78-a10b-a8631274aaba"/>
+    <PID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Inventory management]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Product supply" mc="Standard.BpmnProcess" uid="656c54e6-38b6-4e41-8ca7-ce2b201bf1b1"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Product aquisition order arrived" mc="Standard.Signal" uid="63e3aa84-602e-4ae9-bfad-af5402c810c1"/>
+        <COMPID name="Product acquisition order completed" mc="Standard.Signal" uid="514a0491-6e58-4b06-a51e-115d5ca7308b"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="BusinessOrganizationDomain" mc="Infrastructure.Stereotype" uid="b42187ca-ab75-11df-9861-0014224f9977"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

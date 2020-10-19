@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Student/Graduate" version="4">
+  <OBJECT>
+    <ID name="Student/Graduate" mc="Standard.Actor" uid="c9367942-18f9-4567-82dc-4998cba45f5b"/>
+    <PID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Student/Graduate]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="TogafExternalActor" mc="Infrastructure.Stereotype" uid="7cd6ccf2-ab75-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="93600d43-c656-4c6e-b47a-b90570263483"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Trading order arrived" mc="Standard.Signal" uid="56bcb72e-f44b-41ec-ac63-b699cc476c79"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Trading order completed" version="4">
+  <OBJECT>
+    <ID name="Trading order completed" mc="Standard.Signal" uid="1075fcca-ea20-4d3a-aec9-8bafc25874a1"/>
+    <PID name="Students Platform" mc="Standard.Package" uid="c5aed9f6-094e-4d68-a679-51660841409b"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Trading order completed]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="TogafProduct" mc="Infrastructure.Stereotype" uid="409707ea-ab85-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="bbcc034b-d5ed-40bd-9244-bfff20b3ecdc"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Student/Graduate" mc="Standard.Actor" uid="c9367942-18f9-4567-82dc-4998cba45f5b"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

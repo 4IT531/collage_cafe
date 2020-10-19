@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Product acquisition order completed" version="4">
+  <OBJECT>
+    <ID name="Product acquisition order completed" mc="Standard.Signal" uid="514a0491-6e58-4b06-a51e-115d5ca7308b"/>
+    <PID name="Inventory management" mc="Standard.Package" uid="698aea74-1723-4c78-a10b-a8631274aaba"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Product acquisition order completed]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="TogafProduct" mc="Infrastructure.Stereotype" uid="409707ea-ab85-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="96c7e46a-5e88-4b45-adc8-2aed282cae33"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Stuff trading" mc="Standard.BpmnProcess" uid="10915423-7c03-45f8-bb89-66fee84252a1"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
