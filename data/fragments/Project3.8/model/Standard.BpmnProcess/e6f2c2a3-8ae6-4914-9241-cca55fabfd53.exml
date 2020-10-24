@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Feedback handling" version="4">
+  <OBJECT>
+    <ID name="Feedback handling" mc="Standard.BpmnProcess" uid="e6f2c2a3-8ae6-4914-9241-cca55fabfd53"/>
+    <PID name="Customer relationship management" mc="Standard.Package" uid="374c4201-9468-462c-9a7e-51f798e5cd69"/>
+    <ATTRIBUTES>
+      <ATT name="ProcessType">NoneProcess</ATT>
+      <ATT name="IsClosed">false</ATT>
+      <ATT name="IsExecutable">OUndefined</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Feedback handling]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="TogafProcess" mc="Infrastructure.Stereotype" uid="b9d7cee1-8fe0-45ec-98fa-ea750d4ab42f"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="c9316bf9-4c4f-4f58-a442-c26c6e525e0f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Feedback processed" mc="Standard.Signal" uid="36f8b307-0d42-49a3-84f1-333c57b43879"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="a35309b8-f1ee-43d2-abf6-2db81f79941b"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="3e1e7f47-3bda-4509-9ad4-c0d2b311d28e"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Supporting process which includes gathering and processing of customers feedback and it´s incorpoprtation into the Business strategy]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

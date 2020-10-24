@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Stuff trading" version="4">
+  <OBJECT>
+    <ID name="Stuff trading" mc="Standard.BpmnProcess" uid="8807688a-a50d-4314-8cd8-ab7ea93b957a"/>
+    <PID name="Students Platform" mc="Standard.Package" uid="70ef4895-6e1a-43dd-a5a2-0984f6031bf3"/>
+    <ATTRIBUTES>
+      <ATT name="ProcessType">NoneProcess</ATT>
+      <ATT name="IsClosed">false</ATT>
+      <ATT name="IsExecutable">OUndefined</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Stuff trading]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="TogafProcess" mc="Infrastructure.Stereotype" uid="b9d7cee1-8fe0-45ec-98fa-ea750d4ab42f"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="invoice" mc="Infrastructure.Dependency" uid="1c415a62-5c2f-4d68-afa2-54150ecc274f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[invoice]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Accounting" mc="Standard.Actor" uid="ec585d79-1f9c-4393-a183-6ac010463a9f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="ef855895-aa14-4ea8-9ca9-9cbdd880a43f"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Trading order completed" mc="Standard.Signal" uid="98804d7c-b4a3-4b0f-9b00-06d99cbb2af1"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="3fa960a0-d265-491b-8e90-8a4f739018bb"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Marketing strategy request" mc="Standard.Signal" uid="335bee61-e830-4bc0-a7c9-537d8c64cfee"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="dd498732-942f-4175-8906-cb53d506fc78"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Customer feedback" mc="Standard.Signal" uid="5c881871-8acd-457f-aee3-0c61b7f6777e"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="12b4bc3a-b40a-42d1-a2b1-013ef9047920"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="cf176f08-1120-4a35-a089-9aaff1a08400"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Key process which includes buying, selling and trading of texbooks, notes, tests, computers etc.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

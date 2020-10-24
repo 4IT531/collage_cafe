@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Revenue Authority" version="4">
   <OBJECT>
-    <ID name="Revenue Authority" mc="Standard.Actor" uid="af77a4a5-5a5c-4949-9f74-323fd93d85a1"/>
-    <PID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
+    <ID name="Revenue Authority" mc="Standard.Actor" uid="ea3f1f01-f064-4ad9-a425-b8cca3ba3670"/>
+    <PID name="Business Behavior" mc="Standard.Package" uid="c77d6cae-7b24-4f33-b147-863873341951"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
@@ -18,7 +18,7 @@
       </LINK>
       <COMP relation="Tag">
         <OBJECT>
-          <ID name="" mc="Infrastructure.TaggedValue" uid="352937c5-d1da-4265-a6f3-b28726feb537"/>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="c50a9534-83b2-45c1-ada0-a45bd1584036"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -26,7 +26,7 @@
           <DEPENDENCIES>
             <COMP relation="Actual">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TagParameter" uid="84793a7a-bd8f-4d4e-9929-78d601a631a4"/>
+                <ID name="" mc="Infrastructure.TagParameter" uid="b99eeb45-c9b1-4e50-91e9-f1b3f788a605"/>
                 <ATTRIBUTES>
                   <ATT name="Value"><![CDATA[Revenue Authority]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -36,6 +36,22 @@
             </COMP>
             <LINK relation="Definition">
               <FOREIGNID name="TogafRole_SkillsRequirements" mc="Infrastructure.TagType" uid="5df508be-ab95-11df-9861-0014224f9977"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="05b28d98-7866-4729-a8fa-69c07e346cda"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Country or some legislation authority]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

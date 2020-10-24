@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Business Process" version="4">
   <OBJECT>
-    <ID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="eb7cce86-7906-4e49-8b60-fac2d2a3171d"/>
-    <PID name="Product supply" mc="Standard.BpmnProcess" uid="656c54e6-38b6-4e41-8ca7-ce2b201bf1b1"/>
+    <ID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="12b4bc3a-b40a-42d1-a2b1-013ef9047920"/>
+    <PID name="Stuff trading" mc="Standard.BpmnProcess" uid="8807688a-a50d-4314-8cd8-ab7ea93b957a"/>
     <ATTRIBUTES>
       <ATT name="UiDataVersion">0</ATT>
       <ATT name="UiData"></ATT>

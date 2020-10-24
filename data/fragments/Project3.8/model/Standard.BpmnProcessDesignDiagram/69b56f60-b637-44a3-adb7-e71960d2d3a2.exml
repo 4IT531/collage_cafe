@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Business Process" version="4">
+  <OBJECT>
+    <ID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="69b56f60-b637-44a3-adb7-e71960d2d3a2"/>
+    <PID name="Post evaluation" mc="Standard.BpmnProcess" uid="0c5ace8d-d2df-4d06-948b-0565f7277e74"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">0</ATT>
+      <ATT name="UiData"></ATT>
+      <ATT name="PreviewData"></ATT>
+      <ATT name="Name"><![CDATA[Business Process]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

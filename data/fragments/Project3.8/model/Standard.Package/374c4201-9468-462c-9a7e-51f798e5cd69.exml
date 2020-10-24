@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Customer relationship management" version="4">
+  <OBJECT>
+    <ID name="Customer relationship management" mc="Standard.Package" uid="374c4201-9468-462c-9a7e-51f798e5cd69"/>
+    <PID name="Business Behavior" mc="Standard.Package" uid="c77d6cae-7b24-4f33-b147-863873341951"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Customer relationship management]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Feedback handling" mc="Standard.BpmnProcess" uid="e6f2c2a3-8ae6-4914-9241-cca55fabfd53"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Customer feedback" mc="Standard.Signal" uid="5c881871-8acd-457f-aee3-0c61b7f6777e"/>
+        <COMPID name="Feedback processed" mc="Standard.Signal" uid="36f8b307-0d42-49a3-84f1-333c57b43879"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="BusinessOrganizationDomain" mc="Infrastructure.Stereotype" uid="b42187ca-ab75-11df-9861-0014224f9977"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

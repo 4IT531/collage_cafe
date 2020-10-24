@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Post evaluation" version="4">
+  <OBJECT>
+    <ID name="Post evaluation" mc="Standard.BpmnProcess" uid="0c5ace8d-d2df-4d06-948b-0565f7277e74"/>
+    <PID name="Students Platform" mc="Standard.Package" uid="70ef4895-6e1a-43dd-a5a2-0984f6031bf3"/>
+    <ATTRIBUTES>
+      <ATT name="ProcessType">NoneProcess</ATT>
+      <ATT name="IsClosed">false</ATT>
+      <ATT name="IsExecutable">OUndefined</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Post evaluation]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="TogafProcess" mc="Infrastructure.Stereotype" uid="b9d7cee1-8fe0-45ec-98fa-ea750d4ab42f"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="6174328a-0d73-45bd-ad68-8dd9745c5f4a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Post published" mc="Standard.Signal" uid="8b231fb8-4e80-4957-a381-b7d58f8a257d"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="69b56f60-b637-44a3-adb7-e71960d2d3a2"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="9370cbe7-e793-4634-bcce-af63a50b3240"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Processing and evaluation of post (classifield,teacher evaluation, blog, specilalized content)]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Post request arrived" version="4">
+  <OBJECT>
+    <ID name="Post request arrived" mc="Standard.Signal" uid="07202418-c329-4529-9c18-db5bf476c32f"/>
+    <PID name="Students Platform" mc="Standard.Package" uid="70ef4895-6e1a-43dd-a5a2-0984f6031bf3"/>
+    <ATTRIBUTES>
+      <ATT name="IsEvent">false</ATT>
+      <ATT name="IsException">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Post request arrived]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="TogafEvent" mc="Infrastructure.Stereotype" uid="3f3991b2-ab74-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="9acbc5c2-c544-429e-b11a-973ea28f6bc6"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Post evaluation" mc="Standard.BpmnProcess" uid="0c5ace8d-d2df-4d06-948b-0565f7277e74"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

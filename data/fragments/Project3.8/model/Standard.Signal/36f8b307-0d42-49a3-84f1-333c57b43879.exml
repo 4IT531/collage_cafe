@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Product aquisition order arrived" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Feedback processed" version="4">
   <OBJECT>
-    <ID name="Product aquisition order arrived" mc="Standard.Signal" uid="63e3aa84-602e-4ae9-bfad-af5402c810c1"/>
-    <PID name="Inventory management" mc="Standard.Package" uid="698aea74-1723-4c78-a10b-a8631274aaba"/>
+    <ID name="Feedback processed" mc="Standard.Signal" uid="36f8b307-0d42-49a3-84f1-333c57b43879"/>
+    <PID name="Customer relationship management" mc="Standard.Package" uid="374c4201-9468-462c-9a7e-51f798e5cd69"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
       <ATT name="IsException">false</ATT>
@@ -11,23 +11,23 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Product aquisition order arrived]]></ATT>
+      <ATT name="Name"><![CDATA[Feedback processed]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <LINK relation="Extension">
-        <FOREIGNID name="TogafEvent" mc="Infrastructure.Stereotype" uid="3f3991b2-ab74-11df-9861-0014224f9977"/>
+        <FOREIGNID name="TogafProduct" mc="Infrastructure.Stereotype" uid="409707ea-ab85-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="45d7170a-7039-4538-9a7f-a48496ed9cbc"/>
+          <ID name="" mc="Infrastructure.Dependency" uid="925f77a6-8201-40f7-a312-309c4649fbc6"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Product supply" mc="Standard.BpmnProcess" uid="656c54e6-38b6-4e41-8ca7-ce2b201bf1b1"/>
+              <ID name="Stuff trading" mc="Standard.BpmnProcess" uid="8807688a-a50d-4314-8cd8-ab7ea93b957a"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

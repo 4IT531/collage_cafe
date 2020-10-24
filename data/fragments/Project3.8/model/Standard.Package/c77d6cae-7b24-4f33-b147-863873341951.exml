@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Business Behavior" version="4">
   <OBJECT>
-    <ID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
+    <ID name="Business Behavior" mc="Standard.Package" uid="c77d6cae-7b24-4f33-b147-863873341951"/>
     <PID name="Business Architecture" mc="Standard.Package" uid="1348615a-0018-40bc-bce2-b18d6be613dd"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
@@ -14,24 +14,24 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="Students Platform" mc="Standard.Package" uid="c5aed9f6-094e-4d68-a679-51660841409b"/>
-        <COMPID name="Inventory management" mc="Standard.Package" uid="698aea74-1723-4c78-a10b-a8631274aaba"/>
-        <COMPID name="Organization Domain" mc="Standard.Package" uid="aa6b1b5e-32e6-47b2-9e63-34137c15141a"/>
-        <COMPID name="HR" mc="Standard.Package" uid="ffe0363b-e708-4916-952b-5b64f1a6688d"/>
-        <COMPID name="Student/Graduate" mc="Standard.Actor" uid="c9367942-18f9-4567-82dc-4998cba45f5b"/>
-        <COMPID name="Accounting" mc="Standard.Actor" uid="46a1d8e8-2183-4d90-aa99-98ffea609ae8"/>
-        <COMPID name="Revenue Authority" mc="Standard.Actor" uid="af77a4a5-5a5c-4949-9f74-323fd93d85a1"/>
-        <COMPID name="Marketing" mc="Standard.Actor" uid="b436221b-3e54-4071-ac30-b49d71fc5c62"/>
+        <COMPID name="Students Platform" mc="Standard.Package" uid="70ef4895-6e1a-43dd-a5a2-0984f6031bf3"/>
+        <COMPID name="Student/Graduate" mc="Standard.Actor" uid="45d40fb3-30b4-4278-864a-d7d1a3e198b2"/>
+        <COMPID name="Accounting" mc="Standard.Actor" uid="ec585d79-1f9c-4393-a183-6ac010463a9f"/>
+        <COMPID name="Revenue Authority" mc="Standard.Actor" uid="ea3f1f01-f064-4ad9-a425-b8cca3ba3670"/>
+        <COMPID name="Marketing" mc="Standard.Actor" uid="52a20b48-4e0c-46be-888b-f6989dab033d"/>
+        <COMPID name="Marketing strategy" mc="Standard.Signal" uid="871d306b-66e0-4ccd-80b8-242e66e8e2e3"/>
+        <COMPID name="Marketing strategy request" mc="Standard.Signal" uid="335bee61-e830-4bc0-a7c9-537d8c64cfee"/>
+        <COMPID name="Customer relationship management" mc="Standard.Package" uid="374c4201-9468-462c-9a7e-51f798e5cd69"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessArchitecture" mc="Infrastructure.Stereotype" uid="56eadada-ab6d-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="Event diagram" mc="Standard.StaticDiagram" uid="4f12d9eb-5439-496f-b407-3b239ede5fee"/>
+        <COMPID name="Event diagram" mc="Standard.StaticDiagram" uid="2c1cc877-340a-4074-ae47-28685547d0f9"/>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="451f1764-bd98-4694-be7d-fa99e2c4d92d"/>
+          <ID name="" mc="Infrastructure.Note" uid="9efebffd-ce90-4beb-975a-84c32504e999"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[In TOGAF, the Business Architecture defines the business strategy, governance, organization, and key business processes.
 All these elements are modeled under this domain, with predefined subdomains.]]></ATT>

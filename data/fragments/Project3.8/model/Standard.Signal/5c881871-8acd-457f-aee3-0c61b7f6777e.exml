@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Trading order completed" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Customer feedback" version="4">
   <OBJECT>
-    <ID name="Trading order completed" mc="Standard.Signal" uid="1075fcca-ea20-4d3a-aec9-8bafc25874a1"/>
-    <PID name="Students Platform" mc="Standard.Package" uid="c5aed9f6-094e-4d68-a679-51660841409b"/>
+    <ID name="Customer feedback" mc="Standard.Signal" uid="5c881871-8acd-457f-aee3-0c61b7f6777e"/>
+    <PID name="Customer relationship management" mc="Standard.Package" uid="374c4201-9468-462c-9a7e-51f798e5cd69"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
       <ATT name="IsException">false</ATT>
@@ -11,23 +11,23 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Trading order completed]]></ATT>
+      <ATT name="Name"><![CDATA[Customer feedback]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <LINK relation="Extension">
-        <FOREIGNID name="TogafProduct" mc="Infrastructure.Stereotype" uid="409707ea-ab85-11df-9861-0014224f9977"/>
+        <FOREIGNID name="TogafEvent" mc="Infrastructure.Stereotype" uid="3f3991b2-ab74-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="bbcc034b-d5ed-40bd-9244-bfff20b3ecdc"/>
+          <ID name="" mc="Infrastructure.Dependency" uid="49c25d52-00ee-4ec0-bd20-6520ccf53a6f"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Student/Graduate" mc="Standard.Actor" uid="c9367942-18f9-4567-82dc-4998cba45f5b"/>
+              <ID name="Feedback handling" mc="Standard.BpmnProcess" uid="e6f2c2a3-8ae6-4914-9241-cca55fabfd53"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

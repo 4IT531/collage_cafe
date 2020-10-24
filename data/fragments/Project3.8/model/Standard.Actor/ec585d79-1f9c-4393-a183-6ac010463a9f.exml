@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Accounting" version="4">
   <OBJECT>
-    <ID name="Accounting" mc="Standard.Actor" uid="46a1d8e8-2183-4d90-aa99-98ffea609ae8"/>
-    <PID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
+    <ID name="Accounting" mc="Standard.Actor" uid="ec585d79-1f9c-4393-a183-6ac010463a9f"/>
+    <PID name="Business Behavior" mc="Standard.Package" uid="c77d6cae-7b24-4f33-b147-863873341951"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
@@ -18,21 +18,21 @@
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="tax report" mc="Infrastructure.Dependency" uid="974d1346-5dfc-462c-9654-ca655bdfa764"/>
+          <ID name="tax report" mc="Infrastructure.Dependency" uid="17d86307-a5b7-40b3-af7f-faf6285b1dd9"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[tax report]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Revenue Authority" mc="Standard.Actor" uid="af77a4a5-5a5c-4949-9f74-323fd93d85a1"/>
+              <ID name="Revenue Authority" mc="Standard.Actor" uid="ea3f1f01-f064-4ad9-a425-b8cca3ba3670"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="Tag">
         <OBJECT>
-          <ID name="" mc="Infrastructure.TaggedValue" uid="a4f5016e-c297-4e3e-bba7-d147ac27f66a"/>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="32f32495-9fe7-4368-94ff-9310c373b2d7"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -40,7 +40,7 @@
           <DEPENDENCIES>
             <COMP relation="Actual">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TagParameter" uid="c6db234b-0720-4b95-9cfa-59f0e4341d80"/>
+                <ID name="" mc="Infrastructure.TagParameter" uid="1c42df2c-bc61-4e31-8dc4-d50bd8eb3836"/>
                 <ATTRIBUTES>
                   <ATT name="Value"><![CDATA[Accounting]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -50,6 +50,22 @@
             </COMP>
             <LINK relation="Definition">
               <FOREIGNID name="TogafRole_SkillsRequirements" mc="Infrastructure.TagType" uid="5df508be-ab95-11df-9861-0014224f9977"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="758a7346-2a6f-40e6-9f9c-ddf915b306ca"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Outsourced process regarding accounting]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
