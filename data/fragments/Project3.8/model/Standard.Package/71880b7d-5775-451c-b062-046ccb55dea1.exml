@@ -13,9 +13,25 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Student" mc="Standard.Class" uid="5ff72a78-1e94-498c-8ce4-db0766126ead"/>
+        <COMPID name="Traded stuff" mc="Standard.Class" uid="c15342e2-d991-4d2d-b9b5-7f4cfef99967"/>
+        <COMPID name="Book" mc="Standard.Class" uid="d1956c42-8c33-4f25-8c06-f36cf3f2ce68"/>
+        <COMPID name="Class note" mc="Standard.Class" uid="c0170b6b-bb8a-4f10-b690-53ea34fbdc26"/>
+        <COMPID name="Computer" mc="Standard.Class" uid="f366968b-7130-49c3-853d-77a40e178ec6"/>
+        <COMPID name="Trading order" mc="Standard.Class" uid="53c04ec0-b791-47f8-b766-80183392b1ba"/>
+        <COMPID name="Invoice" mc="Standard.Class" uid="df016332-45b8-4f49-8d5e-a3c302e8ea56"/>
+        <COMPID name="Feedback" mc="Standard.Class" uid="674b0d29-445f-47ec-8197-36b3dc2a9015"/>
+        <COMPID name="Post" mc="Standard.Class" uid="a52e111c-e3a4-4158-bf54-4455790b05c7"/>
+        <COMPID name="Faculty" mc="Standard.Class" uid="f7e2eb78-4fa1-4467-819d-06b45f71c895"/>
+        <COMPID name="Univeristy" mc="Standard.Class" uid="496c07fb-ee6c-4f96-889c-d2ba8a223ef1"/>
+      </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntities" mc="Infrastructure.Stereotype" uid="1b78cab2-ab6d-11df-9861-0014224f9977"/>
       </LINK>
+      <COMP relation="Product">
+        <COMPID name="Class diagram" mc="Standard.StaticDiagram" uid="bb6e6744-8235-421d-b827-eeb32be55d96"/>
+      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="ffcdbb85-07ca-4730-89bd-3a0fa0920bab"/>
