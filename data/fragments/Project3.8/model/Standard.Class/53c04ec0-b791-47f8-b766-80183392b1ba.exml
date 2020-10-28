@@ -15,6 +15,44 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="addStuff" mc="Standard.Operation" uid="177ac18f-0d18-4ef1-a720-2ae4d5fdcfff"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">VisibilityUndefined</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[addStuff]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="BusinessOperation" mc="Infrastructure.Stereotype" uid="33be3eda-ab73-11df-9861-0014224f9977"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="deleteStuff" mc="Standard.Operation" uid="877df31e-f0df-409a-93aa-be6d2882694c"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">VisibilityUndefined</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[deleteStuff]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="BusinessOperation" mc="Infrastructure.Stereotype" uid="33be3eda-ab73-11df-9861-0014224f9977"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="OwnedAttribute">
         <OBJECT>
           <ID name="sumbition date" mc="Standard.Attribute" uid="85ddc71d-faf7-47c8-bc1d-2bb4985b46a2"/>
@@ -116,7 +154,7 @@
       </COMP>
       <COMP relation="OwnedEnd">
         <REFOBJ>
-          <ID name="traded stuff" mc="Standard.AssociationEnd" uid="118cebaf-1edb-4f16-ab58-4a621b5ef651"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="118cebaf-1edb-4f16-ab58-4a621b5ef651"/>
         </REFOBJ>
         <REFOBJ>
           <ID name="invoice" mc="Standard.AssociationEnd" uid="43d3c37d-b021-4bba-9d2d-760fab0a02cf"/>
