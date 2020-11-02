@@ -17,43 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="addPost" mc="Standard.Operation" uid="999307ea-e69d-4c85-a35b-e47afe808874"/>
-          <ATTRIBUTES>
-            <ATT name="Concurrency">false</ATT>
-            <ATT name="Final">false</ATT>
-            <ATT name="Passing">MethodOut</ATT>
-            <ATT name="Visibility">VisibilityUndefined</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[addPost]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Extension">
-              <FOREIGNID name="BusinessOperation" mc="Infrastructure.Stereotype" uid="33be3eda-ab73-11df-9861-0014224f9977"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="deletePost" mc="Standard.Operation" uid="8784470f-74e6-42c0-a9dc-2802faf8dc6b"/>
-          <ATTRIBUTES>
-            <ATT name="Concurrency">false</ATT>
-            <ATT name="Final">false</ATT>
-            <ATT name="Passing">MethodOut</ATT>
-            <ATT name="Visibility">VisibilityUndefined</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[deletePost]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Extension">
-              <FOREIGNID name="BusinessOperation" mc="Infrastructure.Stereotype" uid="33be3eda-ab73-11df-9861-0014224f9977"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="eveluate" mc="Standard.Operation" uid="2d6a0541-9345-471c-8302-877530b22e4a"/>
+          <ID name="eveluate" mc="Standard.Operation" uid="d72652da-79b1-42f3-9164-ca2f92f5cebd"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -62,6 +26,24 @@
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
             <ATT name="Name"><![CDATA[eveluate]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="BusinessOperation" mc="Infrastructure.Stereotype" uid="33be3eda-ab73-11df-9861-0014224f9977"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="publish" mc="Standard.Operation" uid="169c0681-2b29-4fea-9be1-83700031f047"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">VisibilityUndefined</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[publish]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -202,7 +184,7 @@
           <DEPENDENCIES>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="870bcad6-ea4f-4fa9-af8a-2040f86a91bb"/>
+                <ID name="author" mc="Standard.AssociationEnd" uid="870bcad6-ea4f-4fa9-af8a-2040f86a91bb"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -215,7 +197,7 @@
                   <ATT name="Visibility">Public</ATT>
                   <ATT name="IsClass">false</ATT>
                   <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"></ATT>
+                  <ATT name="Name"><![CDATA[author]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -224,9 +206,9 @@
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="author" mc="Standard.Association" uid="d2b08729-1f82-4226-8a82-6b80a213cba6"/>
+                      <ID name="" mc="Standard.Association" uid="d2b08729-1f82-4226-8a82-6b80a213cba6"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"><![CDATA[author]]></ATT>
+                        <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -236,7 +218,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="author" mc="Standard.Association" uid="d2b08729-1f82-4226-8a82-6b80a213cba6"/>
+              <COMPID name="" mc="Standard.Association" uid="d2b08729-1f82-4226-8a82-6b80a213cba6"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
@@ -260,7 +242,7 @@
           <DEPENDENCIES>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="519713dc-e1d0-4898-90d5-4c1544a8b543"/>
+                <ID name="evaluator" mc="Standard.AssociationEnd" uid="519713dc-e1d0-4898-90d5-4c1544a8b543"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -273,7 +255,7 @@
                   <ATT name="Visibility">Public</ATT>
                   <ATT name="IsClass">false</ATT>
                   <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"></ATT>
+                  <ATT name="Name"><![CDATA[evaluator]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -282,9 +264,9 @@
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="evaluator" mc="Standard.Association" uid="00ae7c51-52fd-42ec-8d01-b7de01ec199d"/>
+                      <ID name="" mc="Standard.Association" uid="00ae7c51-52fd-42ec-8d01-b7de01ec199d"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"><![CDATA[evaluator]]></ATT>
+                        <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -294,7 +276,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="evaluator" mc="Standard.Association" uid="00ae7c51-52fd-42ec-8d01-b7de01ec199d"/>
+              <COMPID name="" mc="Standard.Association" uid="00ae7c51-52fd-42ec-8d01-b7de01ec199d"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>

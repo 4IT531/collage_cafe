@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="addStuff" mc="Standard.Operation" uid="177ac18f-0d18-4ef1-a720-2ae4d5fdcfff"/>
+          <ID name="accept" mc="Standard.Operation" uid="a365915d-9df1-4a98-8995-98f67079bee0"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -25,7 +25,7 @@
             <ATT name="Visibility">VisibilityUndefined</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[addStuff]]></ATT>
+            <ATT name="Name"><![CDATA[accept]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -35,7 +35,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="deleteStuff" mc="Standard.Operation" uid="877df31e-f0df-409a-93aa-be6d2882694c"/>
+          <ID name="send" mc="Standard.Operation" uid="8fc40e7d-a4d9-4e17-9bd0-2dd402e9292f"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -43,7 +43,7 @@
             <ATT name="Visibility">VisibilityUndefined</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[deleteStuff]]></ATT>
+            <ATT name="Name"><![CDATA[send]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -157,7 +157,7 @@
           <ID name="" mc="Standard.AssociationEnd" uid="118cebaf-1edb-4f16-ab58-4a621b5ef651"/>
         </REFOBJ>
         <REFOBJ>
-          <ID name="invoice" mc="Standard.AssociationEnd" uid="43d3c37d-b021-4bba-9d2d-760fab0a02cf"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="43d3c37d-b021-4bba-9d2d-760fab0a02cf"/>
         </REFOBJ>
         <OBJECT>
           <ID name="" mc="Standard.AssociationEnd" uid="7a42fac9-cdaf-4e26-a51e-568a5904ddc2"/>

@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="register" mc="Standard.Operation" uid="c31394c5-d8ba-4e5b-b9d0-42bfb2387b63"/>
+          <ID name="register" mc="Standard.Operation" uid="e536375e-c9ea-45c1-9d03-eb4d6c202687"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -26,42 +26,6 @@
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
             <ATT name="Name"><![CDATA[register]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Extension">
-              <FOREIGNID name="BusinessOperation" mc="Infrastructure.Stereotype" uid="33be3eda-ab73-11df-9861-0014224f9977"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="signIn" mc="Standard.Operation" uid="87d5a6f0-7e6c-423b-a13c-2d44b68688fa"/>
-          <ATTRIBUTES>
-            <ATT name="Concurrency">false</ATT>
-            <ATT name="Final">false</ATT>
-            <ATT name="Passing">MethodOut</ATT>
-            <ATT name="Visibility">VisibilityUndefined</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[signIn]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Extension">
-              <FOREIGNID name="BusinessOperation" mc="Infrastructure.Stereotype" uid="33be3eda-ab73-11df-9861-0014224f9977"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="signOut" mc="Standard.Operation" uid="579b6058-31db-4b1c-b3f3-8cbad5344b2e"/>
-          <ATTRIBUTES>
-            <ATT name="Concurrency">false</ATT>
-            <ATT name="Final">false</ATT>
-            <ATT name="Passing">MethodOut</ATT>
-            <ATT name="Visibility">VisibilityUndefined</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[signOut]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -222,16 +186,16 @@
           <ID name="buyer" mc="Standard.AssociationEnd" uid="acac38fd-d460-491f-baf7-eeea828cc47f"/>
         </REFOBJ>
         <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="8cfef220-5dbf-49ab-8e8c-94630ca40b1d"/>
+          <ID name="author" mc="Standard.AssociationEnd" uid="8cfef220-5dbf-49ab-8e8c-94630ca40b1d"/>
         </REFOBJ>
         <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="870bcad6-ea4f-4fa9-af8a-2040f86a91bb"/>
+          <ID name="author" mc="Standard.AssociationEnd" uid="870bcad6-ea4f-4fa9-af8a-2040f86a91bb"/>
         </REFOBJ>
         <REFOBJ>
           <ID name="handled by" mc="Standard.AssociationEnd" uid="6d4245fe-30b6-4b9b-8060-e408ab0d4509"/>
         </REFOBJ>
         <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="519713dc-e1d0-4898-90d5-4c1544a8b543"/>
+          <ID name="evaluator" mc="Standard.AssociationEnd" uid="519713dc-e1d0-4898-90d5-4c1544a8b543"/>
         </REFOBJ>
       </COMP>
       <LINK relation="Extension">
