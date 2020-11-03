@@ -19,7 +19,7 @@
         <COMPID name="Accounting" mc="Standard.Actor" uid="ec585d79-1f9c-4393-a183-6ac010463a9f"/>
         <COMPID name="Revenue Authority" mc="Standard.Actor" uid="ea3f1f01-f064-4ad9-a425-b8cca3ba3670"/>
         <COMPID name="Marketing" mc="Standard.Actor" uid="52a20b48-4e0c-46be-888b-f6989dab033d"/>
-        <COMPID name="Marketing strategy" mc="Standard.Signal" uid="871d306b-66e0-4ccd-80b8-242e66e8e2e3"/>
+        <COMPID name="Marketing strategy created" mc="Standard.Signal" uid="871d306b-66e0-4ccd-80b8-242e66e8e2e3"/>
         <COMPID name="Marketing strategy request" mc="Standard.Signal" uid="335bee61-e830-4bc0-a7c9-537d8c64cfee"/>
         <COMPID name="Customer relationship management" mc="Standard.Package" uid="374c4201-9468-462c-9a7e-51f798e5cd69"/>
       </COMP>

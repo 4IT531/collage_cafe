@@ -25,7 +25,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Marketing strategy" mc="Standard.Signal" uid="871d306b-66e0-4ccd-80b8-242e66e8e2e3"/>
+              <ID name="Marketing strategy created" mc="Standard.Signal" uid="871d306b-66e0-4ccd-80b8-242e66e8e2e3"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
