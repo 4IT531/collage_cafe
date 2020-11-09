@@ -685,17 +685,6 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Feedback was not processed " mc="Standard.BpmnStartEvent" uid="a99086b3-03f6-4d98-8054-3bd4e50c1739"/>
-          <ATTRIBUTES>
-            <ATT name="IsInterrupting">true</ATT>
-            <ATT name="ParallelMultiple">false</ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Feedback was not processed ]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="f12" mc="Standard.BpmnSequenceFlow" uid="efbf7616-1c6a-4995-a96e-a8b8505544a9"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
@@ -708,28 +697,6 @@
             <LINK relation="SourceRef">
               <REFOBJ>
                 <ID name="Feedback processed" mc="Standard.BpmnStartEvent" uid="fdf658b5-b60b-47e9-ac5f-0e33f71eaf2b"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="TargetRef">
-              <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="5f3d9ead-e62a-454d-b49e-e4401094c2bb"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="f14" mc="Standard.BpmnSequenceFlow" uid="5bbd005e-bedd-4e8c-8b26-1980613279ed"/>
-          <ATTRIBUTES>
-            <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"></ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[f14]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="SourceRef">
-              <REFOBJ>
-                <ID name="Feedback was not processed " mc="Standard.BpmnStartEvent" uid="a99086b3-03f6-4d98-8054-3bd4e50c1739"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
@@ -964,6 +931,53 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="Feedback was not processed " mc="Standard.BpmnStartEvent" uid="34377909-7108-41c1-9729-9aa08fb7d4f7"/>
+          <ATTRIBUTES>
+            <ATT name="IsInterrupting">true</ATT>
+            <ATT name="ParallelMultiple">false</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Feedback was not processed ]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="EventDefinitions">
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnTimerEventDefinition" uid="2ea5ff2e-622f-42a7-8d80-2899d86569d0"/>
+                <ATTRIBUTES>
+                  <ATT name="TimeCycle"></ATT>
+                  <ATT name="TimeDate"></ATT>
+                  <ATT name="TimeDuration"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f14" mc="Standard.BpmnSequenceFlow" uid="3d56d11f-853d-4c87-ba52-a134e8a6e2d2"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f14]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Feedback was not processed " mc="Standard.BpmnStartEvent" uid="34377909-7108-41c1-9729-9aa08fb7d4f7"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="5f3d9ead-e62a-454d-b49e-e4401094c2bb"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="TogafProcess" mc="Infrastructure.Stereotype" uid="b9d7cee1-8fe0-45ec-98fa-ea750d4ab42f"/>
@@ -1019,7 +1033,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Stuf trading" mc="Standard.BpmnProcessDesignDiagram" uid="12b4bc3a-b40a-42d1-a2b1-013ef9047920"/>
+        <COMPID name="Stuff trading" mc="Standard.BpmnProcessDesignDiagram" uid="12b4bc3a-b40a-42d1-a2b1-013ef9047920"/>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>

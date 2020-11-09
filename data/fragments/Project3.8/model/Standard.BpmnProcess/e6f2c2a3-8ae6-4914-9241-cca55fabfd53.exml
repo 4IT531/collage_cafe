@@ -129,17 +129,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="feedback was not handeled" mc="Standard.BpmnStartEvent" uid="1ab919a3-5515-46e7-a471-a3b7a9f49d9c"/>
-          <ATTRIBUTES>
-            <ATT name="IsInterrupting">true</ATT>
-            <ATT name="ParallelMultiple">false</ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[feedback was not handeled]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="Feedback handeled " mc="Standard.BpmnStartEvent" uid="5c0f077d-0dc3-4a5d-98d7-4a461755a177"/>
           <ATTRIBUTES>
             <ATT name="IsInterrupting">true</ATT>
@@ -232,28 +221,6 @@
             <LINK relation="TargetRef">
               <REFOBJ>
                 <ID name="Feedback was send to the customer support" mc="Standard.BpmnParallelGateway" uid="c2e38e42-9aaf-4bdb-b557-d8e6f746246d"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="f4" mc="Standard.BpmnSequenceFlow" uid="cfca0639-5bbf-4761-b2fb-33fafd9c6a82"/>
-          <ATTRIBUTES>
-            <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"></ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[f4]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="SourceRef">
-              <REFOBJ>
-                <ID name="feedback was not handeled" mc="Standard.BpmnStartEvent" uid="1ab919a3-5515-46e7-a471-a3b7a9f49d9c"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="TargetRef">
-              <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="a47cdca2-a0c4-49ee-b37b-b6a963932fa3"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -595,6 +562,53 @@
             <LINK relation="TargetRef">
               <REFOBJ>
                 <ID name="Feedback processed" mc="Standard.BpmnEndEvent" uid="33b14fef-91a3-4ec9-a868-8fdcc7cc8a76"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="feedback was not handeled" mc="Standard.BpmnStartEvent" uid="3278f47a-7f7b-443c-85cf-a5383807aa00"/>
+          <ATTRIBUTES>
+            <ATT name="IsInterrupting">true</ATT>
+            <ATT name="ParallelMultiple">false</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[feedback was not handeled]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="EventDefinitions">
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnTimerEventDefinition" uid="5db2e0fb-8887-468a-88a8-3032d5cbd8e4"/>
+                <ATTRIBUTES>
+                  <ATT name="TimeCycle"></ATT>
+                  <ATT name="TimeDate"></ATT>
+                  <ATT name="TimeDuration"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f4" mc="Standard.BpmnSequenceFlow" uid="f6ef1e84-0673-461b-a7d1-8fd0d2319e2a"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f4]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="feedback was not handeled" mc="Standard.BpmnStartEvent" uid="3278f47a-7f7b-443c-85cf-a5383807aa00"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="a47cdca2-a0c4-49ee-b37b-b6a963932fa3"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
