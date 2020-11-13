@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Technology Architecture" version="4">
   <OBJECT>
     <ID name="Technology Architecture" mc="Standard.Package" uid="62bb1cef-b17d-4b26-9bd2-008ee45b01d5"/>
-    <PID name="project3.8" mc="Standard.Package" uid="3182e411-ce17-4c4d-9c8b-52669d0874b3"/>
+    <PID name="project" mc="Standard.Package" uid="3182e411-ce17-4c4d-9c8b-52669d0874b3"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
       <ATT name="IsAbstract">false</ATT>

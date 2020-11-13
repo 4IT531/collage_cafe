@@ -1,8 +1,10 @@
-#Tue Nov 03 19:58:46 CET 2020
+#Fri Nov 13 21:34:47 CET 2020
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.com.modeliosoft.modelio.archimate.perspective.parentId=archimate.ui.partstack.bottom
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
-org.modelio.diagram.editor.OpenedDiagrams4='Feedback handling' {a35309b8-f1ee-43d2-abf6-2db81f79941b} Standard.BpmnProcessDesignDiagram
+org.modelio.diagram.editor.OpenedDiagrams6='Post Lifecycle' {c978a5e5-bfbb-434d-9973-2a854a5c368e} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='Sub-Process' {eabe7b11-47f0-4b60-af16-97907b101bdf} Standard.BpmnSubProcessDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='Sub-Process' {2bac1fcd-7428-4147-bafe-6089e7d8abe3} Standard.BpmnSubProcessDiagram
 org.modelio.diagram.editor.OpenedDiagrams3='Post evaluation' {69b56f60-b637-44a3-adb7-e71960d2d3a2} Standard.BpmnProcessDesignDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
 org.modelio.diagram.editor.OpenedDiagrams2='Stuff trading' {12b4bc3a-b40a-42d1-a2b1-013ef9047920} Standard.BpmnProcessDesignDiagram
