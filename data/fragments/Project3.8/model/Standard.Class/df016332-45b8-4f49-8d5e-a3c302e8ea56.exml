@@ -189,7 +189,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.AssociationEnd" uid="9864e0ba-5e82-456b-bd69-02fe3ae588ce"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="2e74083d-ffc5-491d-9fe3-34a5e021f9ff"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -208,7 +208,7 @@
           <DEPENDENCIES>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="43d3c37d-b021-4bba-9d2d-760fab0a02cf"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="3c45dbcf-0f33-4c77-ae60-5087c1edf9b7"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -226,11 +226,11 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="" mc="Standard.AssociationEnd" uid="9864e0ba-5e82-456b-bd69-02fe3ae588ce"/>
+                    <COMPID name="" mc="Standard.AssociationEnd" uid="2e74083d-ffc5-491d-9fe3-34a5e021f9ff"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="f0b926eb-2e56-46ac-80af-e2d59cfc6a93"/>
+                      <ID name="" mc="Standard.Association" uid="4203d8a4-5007-4ec7-960d-c7d8bc681494"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -242,10 +242,13 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="f0b926eb-2e56-46ac-80af-e2d59cfc6a93"/>
+              <COMPID name="" mc="Standard.Association" uid="4203d8a4-5007-4ec7-960d-c7d8bc681494"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="9864e0ba-5e82-456b-bd69-02fe3ae588ce"/>
+        </REFOBJ>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntity" mc="Infrastructure.Stereotype" uid="146eb72a-ab73-11df-9861-0014224f9977"/>

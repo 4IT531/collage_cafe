@@ -1,7 +1,10 @@
-#Fri Nov 13 14:31:49 CET 2020
+#Fri Nov 13 15:52:40 CET 2020
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.com.modeliosoft.modelio.archimate.perspective.parentId=archimate.ui.partstack.bottom
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.diagram.editor.OpenedDiagrams7='Lifecycle Data Lifecycle diagram' {a95de071-f026-4a1d-acef-6e32663821eb} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams6='Trading order closing' {3a989ee9-5f85-4eee-bace-dd9737aa8985} Standard.BpmnSubProcessDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='Trading order cancellation' {d9d32bca-c6fb-4088-891b-a2ad8002fb65} Standard.BpmnSubProcessDiagram
 org.modelio.diagram.editor.OpenedDiagrams4='Trading order handling' {8bdb508a-88e4-43ba-a71b-fa96dd8ef5c4} Standard.BpmnSubProcessDiagram
 org.modelio.diagram.editor.OpenedDiagrams3='Feedback handling' {a35309b8-f1ee-43d2-abf6-2db81f79941b} Standard.BpmnProcessDesignDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right

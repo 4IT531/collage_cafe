@@ -245,14 +245,14 @@
                 <DEPENDENCIES>
                   <COMP relation="DependsOnDependency">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="cc61a2be-8e91-4ad3-887c-7ecf51e8e25e"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="5a05478b-6d16-4b25-a604-28c091755013"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
-                          <ID name="Trading order" mc="Standard.Class" uid="53c04ec0-b791-47f8-b766-80183392b1ba"/>
+                          <ID name="Trading order" mc="Standard.Class" uid="7883ea8c-712b-44bb-b6a0-a3d34e5f97bd"/>
                         </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
@@ -260,12 +260,17 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="6558125b-0ad9-49af-8442-62127eda052d"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="669c7a1c-54ab-4b14-a414-db7f7ca75bd2"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Inexecutable" mc="Standard.State" uid="ba139063-ff30-4faf-abd8-3d17e2025a61"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
                         </LINK>
@@ -285,14 +290,14 @@
                 <DEPENDENCIES>
                   <COMP relation="DependsOnDependency">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="6b4ebc04-8df7-47a7-ae58-9f8503bc5d04"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="30e8c234-351e-448c-87b2-1cb1a9d0a471"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
-                          <ID name="Trading order" mc="Standard.Class" uid="53c04ec0-b791-47f8-b766-80183392b1ba"/>
+                          <ID name="Trading order" mc="Standard.Class" uid="7883ea8c-712b-44bb-b6a0-a3d34e5f97bd"/>
                         </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
@@ -300,12 +305,17 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="27d4810e-71c6-4591-aabc-db842cecc697"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="73366e06-7343-45bb-980e-7c2f27946792"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Executable" mc="Standard.State" uid="cf41ff18-e3b2-4ff2-8517-01e1e69a7010"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
                         </LINK>
@@ -335,14 +345,14 @@
                 <DEPENDENCIES>
                   <COMP relation="DependsOnDependency">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="44d924e9-6c0f-4579-a49a-55a2c6ede518"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="ce6d495e-f07d-4c80-99a5-8b34b3393362"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
-                          <ID name="Trading order" mc="Standard.Class" uid="53c04ec0-b791-47f8-b766-80183392b1ba"/>
+                          <ID name="Trading order" mc="Standard.Class" uid="7883ea8c-712b-44bb-b6a0-a3d34e5f97bd"/>
                         </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
@@ -350,12 +360,17 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="e0e74b54-9434-4acb-961e-72dc58905297"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="41eab156-b24a-4f5c-8cd4-ca5ab052a4a7"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Invalid" mc="Standard.State" uid="1c4daf4b-4712-484f-a39f-3b6825cebdb1"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
                         </LINK>
@@ -375,14 +390,14 @@
                 <DEPENDENCIES>
                   <COMP relation="DependsOnDependency">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="82056cb7-0d86-42de-8ad2-d64f2386bc62"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="87dbb6d4-6f26-4af7-9da0-246187f036fc"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
-                          <ID name="Trading order" mc="Standard.Class" uid="53c04ec0-b791-47f8-b766-80183392b1ba"/>
+                          <ID name="Trading order" mc="Standard.Class" uid="7883ea8c-712b-44bb-b6a0-a3d34e5f97bd"/>
                         </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
@@ -390,12 +405,17 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="6416311b-f513-416a-8af6-37dff16ebc6e"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="d6d87dbc-5c3a-467c-bb78-d73a94e59cd3"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Valid" mc="Standard.State" uid="ab8e99f3-6f63-4d9d-9b26-febadc041a9d"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
                         </LINK>
@@ -514,14 +534,14 @@
                 <DEPENDENCIES>
                   <COMP relation="DependsOnDependency">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="b32f3e33-e04e-47d6-a104-1f9fe78a988a"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="ccc0febc-3510-4147-a510-7dde6eac89fc"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
-                          <ID name="Trading order" mc="Standard.Class" uid="53c04ec0-b791-47f8-b766-80183392b1ba"/>
+                          <ID name="Trading order" mc="Standard.Class" uid="7883ea8c-712b-44bb-b6a0-a3d34e5f97bd"/>
                         </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
@@ -529,12 +549,17 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="5b67ab23-e546-4e60-ab6e-a8607ce4485c"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="59bfda4a-137e-4083-8668-1aad75451201"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Sent for revision" mc="Standard.State" uid="035f4fcf-9bb7-4d40-8e25-3b023096cd92"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
                         </LINK>
@@ -1109,14 +1134,14 @@
                 <DEPENDENCIES>
                   <COMP relation="DependsOnDependency">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="65fa9c26-2eff-4031-a19e-559d42ed8d25"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="e972e6b2-eddd-41e4-bb44-b96ce2d313de"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
-                          <ID name="Trading order" mc="Standard.Class" uid="53c04ec0-b791-47f8-b766-80183392b1ba"/>
+                          <ID name="Trading order" mc="Standard.Class" uid="7883ea8c-712b-44bb-b6a0-a3d34e5f97bd"/>
                         </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
@@ -1124,12 +1149,17 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="70cc7655-2f98-4862-804f-e50304a437d0"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="899c7ddb-0341-43dc-9ba8-6558603f118c"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Cancelled" mc="Standard.FinalState" uid="fc1eea1d-ea41-42bd-9896-4afeef5b74ef"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
                         </LINK>
@@ -1415,14 +1445,14 @@
                 <DEPENDENCIES>
                   <COMP relation="DependsOnDependency">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="063efa95-292a-4feb-b864-22d3116b25f3"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="b4f6a350-ef45-4baa-97ac-6ff525f090bc"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
-                          <ID name="Trading order" mc="Standard.Class" uid="53c04ec0-b791-47f8-b766-80183392b1ba"/>
+                          <ID name="Trading order" mc="Standard.Class" uid="7883ea8c-712b-44bb-b6a0-a3d34e5f97bd"/>
                         </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
@@ -1430,12 +1460,17 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="54533bb6-595e-46ce-bc9c-4084db849679"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="bd0138a7-2088-4d2a-bd51-c82f6070493c"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Completed" mc="Standard.FinalState" uid="634e2f73-6e05-4ce4-a6a2-66e4980368e1"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Extension">
                           <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
                         </LINK>

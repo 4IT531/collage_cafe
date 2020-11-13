@@ -19,7 +19,6 @@
         <COMPID name="Book" mc="Standard.Class" uid="d1956c42-8c33-4f25-8c06-f36cf3f2ce68"/>
         <COMPID name="Class note" mc="Standard.Class" uid="c0170b6b-bb8a-4f10-b690-53ea34fbdc26"/>
         <COMPID name="Computer" mc="Standard.Class" uid="f366968b-7130-49c3-853d-77a40e178ec6"/>
-        <COMPID name="Trading order" mc="Standard.Class" uid="53c04ec0-b791-47f8-b766-80183392b1ba"/>
         <COMPID name="Invoice" mc="Standard.Class" uid="df016332-45b8-4f49-8d5e-a3c302e8ea56"/>
         <COMPID name="Feedback" mc="Standard.Class" uid="674b0d29-445f-47ec-8197-36b3dc2a9015"/>
         <COMPID name="Post" mc="Standard.Class" uid="a52e111c-e3a4-4158-bf54-4455790b05c7"/>
@@ -28,6 +27,7 @@
         <COMPID name="Classifield" mc="Standard.Class" uid="4329817d-fffa-40b0-bca6-56ce762577a6"/>
         <COMPID name="Other" mc="Standard.Class" uid="b9049cb4-ba64-4d50-b7f5-a4916a65b8ae"/>
         <COMPID name="Service" mc="Standard.Class" uid="784c56b4-ca74-425b-855d-6483b7f0de32"/>
+        <COMPID name="Trading order" mc="Standard.Class" uid="7883ea8c-712b-44bb-b6a0-a3d34e5f97bd"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntities" mc="Infrastructure.Stereotype" uid="1b78cab2-ab6d-11df-9861-0014224f9977"/>
