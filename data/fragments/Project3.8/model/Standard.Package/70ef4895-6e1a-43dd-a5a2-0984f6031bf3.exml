@@ -14,8 +14,8 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
-        <COMPID name="Stuff trading" mc="Standard.BpmnProcess" uid="8807688a-a50d-4314-8cd8-ab7ea93b957a"/>
         <COMPID name="Post evaluation" mc="Standard.BpmnProcess" uid="0c5ace8d-d2df-4d06-948b-0565f7277e74"/>
+        <COMPID name="Stuff trading" mc="Standard.BpmnProcess" uid="510e78a7-e277-409e-9969-563d55536fda"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Trading order arrived" mc="Standard.Signal" uid="8692e4f7-aa7b-4cf3-a7a1-94f7a74ad9a4"/>
