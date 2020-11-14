@@ -1,0 +1,470 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lifecycle" version="4">
+  <OBJECT>
+    <ID name="Lifecycle" mc="Standard.StateMachine" uid="c9168533-7e33-47a9-93dd-ed6b9eab2ce8"/>
+    <PID name="Post" mc="Standard.Class" uid="b08b83a4-c482-4b3b-b3e3-99a85d3be724"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Lifecycle]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="dc56c8c6-9569-4f70-b07b-ca817623add3"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="41f345b0-d23f-42fc-bad1-7a917d70d862"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Post arrived/checkPost()" mc="Standard.Transition" uid="52ca68ef-82cf-4c05-b92f-5a1b9c94b0e8"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Post arrived/checkPost()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="checkPost" mc="Standard.Operation" uid="7d1e7026-99b7-4e2c-9906-b7634773582f"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Post arrived" mc="Standard.Event" uid="9a1b5113-26d2-449b-b305-cf284a8add21"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Checked" mc="Standard.State" uid="d24a728f-1c8d-43fa-85ea-0e1dc4721930"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Checked" mc="Standard.State" uid="d24a728f-1c8d-43fa-85ea-0e1dc4721930"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Checked]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Post checked/markedAsValid()" mc="Standard.Transition" uid="e91ef32d-1c70-4945-a4c4-209e106386a4"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Post checked/markedAsValid()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="markAsValid" mc="Standard.Operation" uid="643a0d86-bfcd-4d9d-8061-c679d3400ca3"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Post checked" mc="Standard.Event" uid="f062849e-9edc-47c0-b0a4-f558a36515d7"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Valid" mc="Standard.State" uid="702306f9-a42a-4cc4-b5ac-3f55aa9bbc19"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Standard.Transition" uid="663e8c0c-bc71-4e41-8163-19d7dc260557"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"><![CDATA[ ]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="markAsInvalid" mc="Standard.Operation" uid="471fd9f8-2617-4f7e-a351-2a553d8f223c"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Post checked" mc="Standard.Event" uid="f062849e-9edc-47c0-b0a4-f558a36515d7"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Invalid" mc="Standard.State" uid="7117e93d-2fb6-4bd2-b4ac-7a45ad825ea4"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Valid" mc="Standard.State" uid="702306f9-a42a-4cc4-b5ac-3f55aa9bbc19"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Valid]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Post can be published/markedAsPublishable()" mc="Standard.Transition" uid="9b4c5dde-93f8-4dd3-b57a-16b9d3130ab3"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Post can be published/markedAsPublishable()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="markAsPublishable" mc="Standard.Operation" uid="d921902d-0afc-4196-9055-46364fe0e973"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Post can be published" mc="Standard.Event" uid="32052559-3cde-48b2-80eb-bd38ff768e4f"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Publishable" mc="Standard.State" uid="c6fe3433-e37c-4a6a-95f0-3184ba4241d4"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Invalid" mc="Standard.State" uid="7117e93d-2fb6-4bd2-b4ac-7a45ad825ea4"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Invalid]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Post cannot be published/markedAsUnpublishable()" mc="Standard.Transition" uid="4b5aa38f-8bf3-44ae-a3e3-06f9a9f522e9"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Post cannot be published/markedAsUnpublishable()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="markAsUnpublishable" mc="Standard.Operation" uid="380d1a44-9082-4573-8b10-d1225265d0dd"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Post cannot be published" mc="Standard.Event" uid="6be09fd0-25e6-4be4-86bf-7dce585290bc"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Unpublishable" mc="Standard.State" uid="f0d6922a-f28e-48cf-a814-e7941b47165d"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Unpublishable" mc="Standard.State" uid="f0d6922a-f28e-48cf-a814-e7941b47165d"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Unpublishable]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Sending the post back to author for revision/sendForRevision()" mc="Standard.Transition" uid="ecc211d3-db87-4a51-8971-86e65bdf59d1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Sending the post back to author for revision/sendForRevision()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="sendForRevision" mc="Standard.Operation" uid="cf9d0c3e-0218-4e1f-bdfe-bc4730555568"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Sending the post back to author for revision" mc="Standard.Event" uid="fe0f6cec-6fab-4839-a495-75aafbf56564"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Sent for revision" mc="Standard.State" uid="58c14f18-eda9-4bcc-a88e-988e84a41e35"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Publishable" mc="Standard.State" uid="c6fe3433-e37c-4a6a-95f0-3184ba4241d4"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Publishable]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Publishing the post/publish()" mc="Standard.Transition" uid="546f3b39-22ea-4b4b-b4f8-c63b3a2a5ddc"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Publishing the post/publish()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="publish" mc="Standard.Operation" uid="cc2a9879-c69d-49ab-9c77-b7422ec9dfc1"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Publishing the post" mc="Standard.Event" uid="409273c9-d64f-4b44-9ebe-f4ccf48bb618"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Published" mc="Standard.FinalState" uid="b6b9689f-4a10-4e67-a543-d6455966bdba"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Sent for revision" mc="Standard.State" uid="58c14f18-eda9-4bcc-a88e-988e84a41e35"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Sent for revision]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Recieving the revision/checkPost" mc="Standard.Transition" uid="32722d34-cbd1-4ab4-9c3f-86125db154c5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Recieving the revision/checkPost]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="checkPost" mc="Standard.Operation" uid="7d1e7026-99b7-4e2c-9906-b7634773582f"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Recieving the revision" mc="Standard.Event" uid="1932017f-1e68-4866-a201-e82cc1ec6da2"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Checked" mc="Standard.State" uid="d24a728f-1c8d-43fa-85ea-0e1dc4721930"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Revision did not arrived/deletePost()" mc="Standard.Transition" uid="9d3f9d42-0165-4dd4-b309-1af047c14b0b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Revision did not arrived/deletePost()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="deletePost" mc="Standard.Operation" uid="bd81e6f2-d188-4708-ba44-bc9743db4550"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Revision did not arrived" mc="Standard.Event" uid="2c42f420-1e5a-44e7-8930-3472d2d8af6f"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Deleted" mc="Standard.FinalState" uid="8a37cbfe-2600-4d80-8968-576f82d0fd51"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Published" mc="Standard.FinalState" uid="b6b9689f-4a10-4e67-a543-d6455966bdba"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Published]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Deleted" mc="Standard.FinalState" uid="8a37cbfe-2600-4d80-8968-576f82d0fd51"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Deleted]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="EComponent">
+        <OBJECT>
+          <ID name="Post checked" mc="Standard.Event" uid="f062849e-9edc-47c0-b0a4-f558a36515d7"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Post checked]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Post arrived" mc="Standard.Event" uid="9a1b5113-26d2-449b-b305-cf284a8add21"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Post arrived]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Post can be published" mc="Standard.Event" uid="32052559-3cde-48b2-80eb-bd38ff768e4f"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Post can be published]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Post cannot be published" mc="Standard.Event" uid="6be09fd0-25e6-4be4-86bf-7dce585290bc"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Post cannot be published]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Sending the post back to author for revision" mc="Standard.Event" uid="fe0f6cec-6fab-4839-a495-75aafbf56564"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Sending the post back to author for revision]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Revision did not arrived" mc="Standard.Event" uid="2c42f420-1e5a-44e7-8930-3472d2d8af6f"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Revision did not arrived]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Publishing the post" mc="Standard.Event" uid="409273c9-d64f-4b44-9ebe-f4ccf48bb618"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Publishing the post]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Recieving the revision" mc="Standard.Event" uid="1932017f-1e68-4866-a201-e82cc1ec6da2"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Recieving the revision]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="Post Lifecycle" mc="Standard.StateMachineDiagram" uid="a389ca14-0c4d-4408-b0ae-c8240d94b3e1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

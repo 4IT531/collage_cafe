@@ -81,7 +81,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="SuperType">
-              <ID name="Post" mc="Standard.Class" uid="a52e111c-e3a4-4158-bf54-4455790b05c7"/>
+              <ID name="Post" mc="Standard.Class" uid="b08b83a4-c482-4b3b-b3e3-99a85d3be724"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

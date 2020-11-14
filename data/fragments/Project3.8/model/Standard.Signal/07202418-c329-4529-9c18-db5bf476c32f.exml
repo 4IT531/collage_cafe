@@ -27,7 +27,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Post evaluation" mc="Standard.BpmnProcess" uid="0c5ace8d-d2df-4d06-948b-0565f7277e74"/>
+              <ID name="Post evaluation" mc="Standard.BpmnProcess" uid="99ac010c-a9da-4add-8266-f21045698a83"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
